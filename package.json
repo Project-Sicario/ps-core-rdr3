@@ -1,0 +1,32 @@
+{
+  "name": "ps-core-rdr3",
+  "version": "1.0.0",
+  "description": "ps-core-rdr3",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch true",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "author": "Rory Pearson",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "eslint": "^7.6.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-loader": "^4.0.2",
+    "prettier": "^2.0.5",
+    "remove-files-webpack-plugin": "^1.4.3",
+    "ts-loader": "^8.0.2",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "@citizenfx/client": "^1.0.2792-1",
+    "@citizenfx/server": "^1.0.2792-1",
+    "@types/node": "^16.6.2"
+  }
+}
