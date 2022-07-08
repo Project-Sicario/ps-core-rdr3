@@ -1,22 +1,5 @@
-class PSCoreServer {
-    private Players = {};
-    private Player = {};
+const PSBase = global.exports["ps-base-rdr3"].GetCoreObject();
 
-    constructor() {
-        (async() => {
-            this.Players = this.Players;
-            this.Player = this.Player;
-            return this;
-        })
-    }
-
-    public Login = () => {
-        console.log("Login");
-    }
-
-    public Logout = () => {
-        console.log("Logout");
-    }
-}
-
-export default PSCoreServer;
+PSBase.Functions.CreateCallback("testCallback", async(source, cb) => {
+    cb("Hello im from the server")
+});
