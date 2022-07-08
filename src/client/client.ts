@@ -8,11 +8,10 @@ setImmediate(() => {
 });
 
 RegisterCommand(
-  'tstTr',
+  'cplayer',
   () => {
-    PSBase.Functions.TriggerCallback('testCallback', (response: any) => {
-      console.log(response);
-    });
+    console.log("running command");
+    emitNet("ps-core:net:login");
   },
   false,
 );
